@@ -1,0 +1,40 @@
+.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover{
+  background-color: white;
+  color: rgb(217,58,122);
+}
+.navbar-inverse .navbar-nav>li>a:hover{
+  color: black;
+}
+section
+{
+  background:rgb(250, 222, 221);
+  height: 650px;
+}
+.banner
+{
+  background:white;
+  min-height:200px;
+}
+.banner .row
+{
+  text-align:center;
+  margin-top:50px;
+}
+.banner h1
+{
+  color:black;
+}
+.opaque-navbar {
+    background-color: white;
+  /* Transparent = rgba(0,0,0,0) / Translucent = (0,0,0,0.5)  */
+    height: 60px;
+    border-bottom: 0px;
+}
+
+.opaque-navbar.opaque {
+    height: 60px;
+}
+
+ul.dropdown-menu {
+    background-color: black;
+}
