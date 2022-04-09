@@ -1,0 +1,49 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node dist/index.js",
+    "create-env": "printenv > .env",
+    "start-dev": "ts-node dist/index.js",
+    "build": "tsc -p .",
+    "dev": "env-cmd -f ./src/config/dev.env ts-node-dev --trace-warnings -- src/index.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/body-parser": "^1.19.2",
+    "@types/express": "^4.17.13",
+    "@types/node": "^17.0.21",
+    "bad-words": "^3.0.4",
+    "bcrypt": "^5.0.1",
+    "body-parser": "^1.19.2",
+    "cors": "^2.8.5",
+    "cross-env": "^7.0.3",
+    "dotenv": "^16.0.0",
+    "env-cmd": "^10.1.0",
+    "express": "^4.17.3",
+    "express-async-errors": "^3.1.1",
+    "express-validator": "^6.14.0",
+    "helmet": "^5.0.2",
+    "http-status-codes": "^2.2.0",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^6.2.6",
+    "multer": "^1.4.4",
+    "rimraf": "^3.0.2",
+    "sharp": "^0.30.2",
+    "ts-node": "^10.7.0",
+    "ts-node-dev": "^1.1.8",
+    "typescript": "^4.6.2"
+  },
+  "devDependencies": {
+    "@types/bad-words": "^3.0.1",
+    "@types/bcrypt": "^5.0.0",
+    "@types/cors": "^2.8.12",
+    "@types/jsonwebtoken": "^8.5.8",
+    "@types/multer": "^1.4.7",
+    "@types/sharp": "^0.30.0"
+  }
+}
