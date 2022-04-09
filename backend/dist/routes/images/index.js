@@ -1,0 +1,22 @@
+"use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.imageRouter = void 0;
+var express_1 = __importDefault(require("express"));
+var require_auth_1 = require("../../middlewares/require-auth");
+var validate_request_1 = require("../../middlewares/validate-request");
+var multer_1 = require("../../utils/multer");
+var add_image_1 = require("./add-image");
+var get_feed_images_1 = require("./get-feed-images");
+var get_image_1 = require("./get-image");
+var get_user_images_1 = require("./get-user-images");
+var upload_image_1 = require("./upload-image");
+var router = express_1.default.Router();
+exports.imageRouter = router;
+router.post("/meta/add", require_auth_1.requireAuth, add_image_1.addImageValidator, validate_request_1.validateRequest, add_image_1.addImageHandler);
+router.post("/upload", require_auth_1.requireAuth, multer_1.upload.single('image'), upload_image_1.uploadImageHandler);
+router.get("/feed", require_auth_1.requireAuth, get_feed_images_1.getFeedHandler);
+router.get("/me", require_auth_1.requireAuth, get_user_images_1.getUserImagesHandler);
+router.get("/:imageId", require_auth_1.requireAuth, get_image_1.imageHandler);
