@@ -1,0 +1,34 @@
+body {
+    font-family: 'Lato', sans-serif;
+    background-color: rgb(250, 222, 221);
+}
+.hero {
+    background-position: right;
+  background-image: url('https://elements-cover-images-0.imgix.net/de43cb75-6676-435d-add0-f24d33122f61?auto=compress%2Cformat&fit=max&w=900&s=60c48351d014ab2b437828dd5b3f2cc9');
+   background-repeat: no-repeat;
+   background-size: contain;
+   color: #fff;
+   height: 620px;
+   width: 50%;
+   float: right;
+}
+p{
+    font-family: 'Lato', sans-serif;
+    color: black;
+    margin: 0%;
+}
+h1 {
+  /* margin: 0; */
+  margin-top: 100px;
+}
+.pink{
+  color: rgb(217,58,122);
+}
+.container {    
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-top: 50px;
+  max-width: 600px;
+  margin: 0 auto;
+  float: left;
+}
