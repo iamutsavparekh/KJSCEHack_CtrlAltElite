@@ -1,5 +1,5 @@
 from fileinput import filename
-from models import adjust_brightness,black_white,blur
+from models import adjust_brightness,black_white,contrast
 import os
 import urllib.request
 from werkzeug.utils import secure_filename
@@ -55,9 +55,9 @@ def bw(filename):
         'black_white_'+filename)
   return render_template('editor.html')
 
-@app.route('/blur/<filename>', methods=['GET','POST'])
-def blur(filename):
-  blur.blur_btn_clicked('static/'+ filename)
+@app.route('/contrast/<filename>', methods=['GET','POST'])
+def contrast(filename):
+  contrast.adjust_contrast('static/'+ filename, 'contrast_'+filename, factor,1.7)
   return render_template('editor.html')
 
 if __name__ == '__main__':
