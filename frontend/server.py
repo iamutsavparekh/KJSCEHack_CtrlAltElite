@@ -22,6 +22,10 @@ def index():
 def my_link():
   return render_template('editor.html')
 
+@app.route('/social-feed/')
+def social_feed():
+  return render_template('social feed.html')
+
 @app.route('/',methods=['POST'])
 def upload_image():
   if 'file' not in request.files:
