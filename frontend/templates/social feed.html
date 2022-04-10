@@ -1,6 +1,7 @@
 <html>
     <head>
-        <link rel="stylesheet" href="social feed.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename= 'css/social feed.css') }}">
+    <script src="https://use.fontawesome.com/f6f553f247.js"></script>
     </head>
 <header>
 
@@ -277,7 +278,7 @@
 
 </div>
 <!-- End of container -->
-
+<script type="text/javascript" src="{{ url_for('static', filename='social feed.js') }}"></script>
 </main>
 <script src="social feed.js"></script>
 </html>
