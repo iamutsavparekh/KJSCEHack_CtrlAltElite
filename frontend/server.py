@@ -44,10 +44,10 @@ def upload_image():
 def display_image(filename):
   return redirect(url_for('static',filename='/'+filename),code=301)
 
-@app.route('/bright/', methods=['GET','POST'])
-def bright():
-  adjust_brightness.brightness("home_bg.png",0.5)
-  return render_template('home.html')
+@app.route('/bright/<filename>', methods=['GET','POST'])
+def bright(filename):
+  adjust_brightness.brightness('static/'+ filename,0.5)
+  return render_template('editor.html')
 
 if __name__ == '__main__':
   app.run(debug=True)
