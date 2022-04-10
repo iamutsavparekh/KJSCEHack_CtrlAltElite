@@ -1,10 +1,34 @@
 <html>
     <head>
-    <link rel="stylesheet" href="{{ url_for('static', filename= 'css/social feed.css') }}">
-    <script src="https://use.fontawesome.com/f6f553f247.js"></script>
-    </head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="{{ url_for('static', filename= 'css/navbar.css') }}">
+        <link rel="stylesheet" href="{{ url_for('static', filename= 'css/home.css') }}">
+        <link rel="stylesheet" href="{{ url_for('static', filename= 'css/social feed.css') }}">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">    </head>
 <header>
-
+    <div class="navbar navbar-inverse navbar-fixed-top opaque-navbar">
+        <a class="navbar-brand" href="#">
+                  <img src="{{ url_for('static', filename='logo1.png') }}" width="120" alt="" class="d-inline-block align-left mr-2">
+        </a>          
+            <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navMain">
+        <span class="glyphicon glyphicon-chevron-right" style="color:white;"></span>
+        </button>
+          </div>
+          <div class="collapse navbar-collapse" id="navMain">
+            <ul class="nav navbar-nav pull-right">
+              <li><a href="/">Home</a></li>
+              <li class="active"><a href="/my-link/">Upload</a></li>
+              <li><a href="/social-feed/">Social Feed</a></li> 
+              <li><a href="myacc.html">My Account</a></li> 
+            </ul>
+          </div>
+        
+      </div>
 <div class="container">
 
     <div class="profile">
@@ -21,7 +45,7 @@
 
             <button class="btn profile-edit-btn">Edit Profile</button>
 
-            <button class="btn profile-settings-btn" aria-label="profile settings"><i class="fas fa-cog" aria-hidden="true"></i></button>
+            <button class="btn profile-settings-btn" aria-label="profile settings"><i class="fa fa-cog" aria-hidden="true"></i></button>
 
         </div>
 
@@ -62,8 +86,8 @@
             <div class="gallery-item-info">
 
                 <ul>
-                    <li class="gallery-item-likes"><span class="visually-hidden">Likes:</span><i class="fas fa-heart" aria-hidden="true"></i> 56</li>
-                    <li class="gallery-item-comments"><span class="visually-hidden">Comments:</span><i class="fas fa-comment" aria-hidden="true"></i> 2</li>
+                    <li class="gallery-item-likes"><span class="visually-hidden">Likes:</span><i class="fa fa-heart" aria-hidden="true"></i> 56</li>
+                    <li class="gallery-item-comments"><span class="visually-hidden">Comments:</span><i class="fa fa-comment" aria-hidden="true"></i> 2</li>
                 </ul>
 
             </div>
@@ -77,8 +101,8 @@
             <div class="gallery-item-info">
 
                 <ul>
-                    <li class="gallery-item-likes"><span class="visually-hidden">Likes:</span><i class="fas fa-heart" aria-hidden="true"></i> 89</li>
-                    <li class="gallery-item-comments"><span class="visually-hidden">Comments:</span><i class="fas fa-comment" aria-hidden="true"></i> 5</li>
+                    <li class="gallery-item-likes"><span class="visually-hidden">Likes:</span><i class="fa fa-heart" aria-hidden="true"></i> 89</li>
+                    <li class="gallery-item-comments"><span class="visually-hidden">Comments:</span><i class="fa fa-comment" aria-hidden="true"></i> 5</li>
                 </ul>
 
             </div>
@@ -91,15 +115,15 @@
 
             <div class="gallery-item-type">
 
-                <span class="visually-hidden">Gallery</span><i class="fas fa-clone" aria-hidden="true"></i>
+                <span class="visually-hidden">Gallery</span><i class="fa fa-clone" aria-hidden="true"></i>
 
             </div>
 
             <div class="gallery-item-info">
 
                 <ul>
-                    <li class="gallery-item-likes"><span class="visually-hidden">Likes:</span><i class="fas fa-heart" aria-hidden="true"></i> 42</li>
-                    <li class="gallery-item-comments"><span class="visually-hidden">Comments:</span><i class="fas fa-comment" aria-hidden="true"></i> 1</li>
+                    <li class="gallery-item-likes"><span class="visually-hidden">Likes:</span><i class="fa fa-heart" aria-hidden="true"></i> 42</li>
+                    <li class="gallery-item-comments"><span class="visually-hidden">Comments:</span><i class="fa fa-comment" aria-hidden="true"></i> 1</li>
                 </ul>
 
             </div>
@@ -112,15 +136,15 @@
 
             <div class="gallery-item-type">
 
-                <span class="visually-hidden">Video</span><i class="fas fa-video" aria-hidden="true"></i>
+                <span class="visually-hidden">Video</span><i class="fa fa-video" aria-hidden="true"></i>
 
             </div>
 
             <div class="gallery-item-info">
 
                 <ul>
-                    <li class="gallery-item-likes"><span class="visually-hidden">Likes:</span><i class="fas fa-heart" aria-hidden="true"></i> 38</li>
-                    <li class="gallery-item-comments"><span class="visually-hidden">Comments:</span><i class="fas fa-comment" aria-hidden="true"></i> 0</li>
+                    <li class="gallery-item-likes"><span class="visually-hidden">Likes:</span><i class="fa fa-heart" aria-hidden="true"></i> 38</li>
+                    <li class="gallery-item-comments"><span class="visually-hidden">Comments:</span><i class="fa fa-comment" aria-hidden="true"></i> 0</li>
                 </ul>
 
             </div>
@@ -133,15 +157,15 @@
 
             <div class="gallery-item-type">
 
-                <span class="visually-hidden">Gallery</span><i class="fas fa-clone" aria-hidden="true"></i>
+                <span class="visually-hidden">Gallery</span><i class="fa fa-clone" aria-hidden="true"></i>
 
             </div>
 
             <div class="gallery-item-info">
 
                 <ul>
-                    <li class="gallery-item-likes"><span class="visually-hidden">Likes:</span><i class="fas fa-heart" aria-hidden="true"></i> 47</li>
-                    <li class="gallery-item-comments"><span class="visually-hidden">Comments:</span><i class="fas fa-comment" aria-hidden="true"></i> 1</li>
+                    <li class="gallery-item-likes"><span class="visually-hidden">Likes:</span><i class="fa fa-heart" aria-hidden="true"></i> 47</li>
+                    <li class="gallery-item-comments"><span class="visually-hidden">Comments:</span><i class="fa fa-comment" aria-hidden="true"></i> 1</li>
                 </ul>
 
             </div>
@@ -155,8 +179,8 @@
             <div class="gallery-item-info">
 
                 <ul>
-                    <li class="gallery-item-likes"><span class="visually-hidden">Likes:</span><i class="fas fa-heart" aria-hidden="true"></i> 94</li>
-                    <li class="gallery-item-comments"><span class="visually-hidden">Comments:</span><i class="fas fa-comment" aria-hidden="true"></i> 3</li>
+                    <li class="gallery-item-likes"><span class="visually-hidden">Likes:</span><i class="fa fa-heart" aria-hidden="true"></i> 94</li>
+                    <li class="gallery-item-comments"><span class="visually-hidden">Comments:</span><i class="fa fa-comment" aria-hidden="true"></i> 3</li>
                 </ul>
 
             </div>
@@ -169,15 +193,15 @@
 
             <div class="gallery-item-type">
 
-                <span class="visually-hidden">Gallery</span><i class="fas fa-clone" aria-hidden="true"></i>
+                <span class="visually-hidden">Gallery</span><i class="fa fa-clone" aria-hidden="true"></i>
 
             </div>
 
             <div class="gallery-item-info">
 
                 <ul>
-                    <li class="gallery-item-likes"><span class="visually-hidden">Likes:</span><i class="fas fa-heart" aria-hidden="true"></i> 52</li>
-                    <li class="gallery-item-comments"><span class="visually-hidden">Comments:</span><i class="fas fa-comment" aria-hidden="true"></i> 4</li>
+                    <li class="gallery-item-likes"><span class="visually-hidden">Likes:</span><i class="fa fa-heart" aria-hidden="true"></i> 52</li>
+                    <li class="gallery-item-comments"><span class="visually-hidden">Comments:</span><i class="fa fa-comment" aria-hidden="true"></i> 4</li>
                 </ul>
 
             </div>
@@ -191,8 +215,8 @@
             <div class="gallery-item-info">
 
                 <ul>
-                    <li class="gallery-item-likes"><span class="visually-hidden">Likes:</span><i class="fas fa-heart" aria-hidden="true"></i> 66</li>
-                    <li class="gallery-item-comments"><span class="visually-hidden">Comments:</span><i class="fas fa-comment" aria-hidden="true"></i> 2</li>
+                    <li class="gallery-item-likes"><span class="visually-hidden">Likes:</span><i class="fa fa-heart" aria-hidden="true"></i> 66</li>
+                    <li class="gallery-item-comments"><span class="visually-hidden">Comments:</span><i class="fa fa-comment" aria-hidden="true"></i> 2</li>
                 </ul>
 
             </div>
@@ -205,15 +229,15 @@
 
             <div class="gallery-item-type">
 
-                <span class="visually-hidden">Gallery</span><i class="fas fa-clone" aria-hidden="true"></i>
+                <span class="visually-hidden">Gallery</span><i class="fa fa-clone" aria-hidden="true"></i>
 
             </div>
 
             <div class="gallery-item-info">
 
                 <ul>
-                    <li class="gallery-item-likes"><span class="visually-hidden">Likes:</span><i class="fas fa-heart" aria-hidden="true"></i> 45</li>
-                    <li class="gallery-item-comments"><span class="visually-hidden">Comments:</span><i class="fas fa-comment" aria-hidden="true"></i> 0</li>
+                    <li class="gallery-item-likes"><span class="visually-hidden">Likes:</span><i class="fa fa-heart" aria-hidden="true"></i> 45</li>
+                    <li class="gallery-item-comments"><span class="visually-hidden">Comments:</span><i class="fa fa-comment" aria-hidden="true"></i> 0</li>
                 </ul>
 
             </div>
@@ -227,8 +251,8 @@
             <div class="gallery-item-info">
 
                 <ul>
-                    <li class="gallery-item-likes"><span class="visually-hidden">Likes:</span><i class="fas fa-heart" aria-hidden="true"></i> 34</li>
-                    <li class="gallery-item-comments"><span class="visually-hidden">Comments:</span><i class="fas fa-comment" aria-hidden="true"></i> 1</li>
+                    <li class="gallery-item-likes"><span class="visually-hidden">Likes:</span><i class="fa fa-heart" aria-hidden="true"></i> 34</li>
+                    <li class="gallery-item-comments"><span class="visually-hidden">Comments:</span><i class="fa fa-comment" aria-hidden="true"></i> 1</li>
                 </ul>
 
             </div>
@@ -242,8 +266,8 @@
             <div class="gallery-item-info">
 
                 <ul>
-                    <li class="gallery-item-likes"><span class="visually-hidden">Likes:</span><i class="fas fa-heart" aria-hidden="true"></i> 41</li>
-                    <li class="gallery-item-comments"><span class="visually-hidden">Comments:</span><i class="fas fa-comment" aria-hidden="true"></i> 0</li>
+                    <li class="gallery-item-likes"><span class="visually-hidden">Likes:</span><i class="fa fa-heart" aria-hidden="true"></i> 41</li>
+                    <li class="gallery-item-comments"><span class="visually-hidden">Comments:</span><i class="fa fa-comment" aria-hidden="true"></i> 0</li>
                 </ul>
 
             </div>
@@ -256,15 +280,15 @@
 
             <div class="gallery-item-type">
 
-                <span class="visually-hidden">Video</span><i class="fas fa-video" aria-hidden="true"></i>
+                <span class="visually-hidden">Video</span><i class="fa fa-video" aria-hidden="true"></i>
 
             </div>
 
             <div class="gallery-item-info">
 
                 <ul>
-                    <li class="gallery-item-likes"><span class="visually-hidden">Likes:</span><i class="fas fa-heart" aria-hidden="true"></i> 30</li>
-                    <li class="gallery-item-comments"><span class="visually-hidden">Comments:</span><i class="fas fa-comment" aria-hidden="true"></i> 2</li>
+                    <li class="gallery-item-likes"><span class="visually-hidden">Likes:</span><i class="fa fa-heart" aria-hidden="true"></i> 30</li>
+                    <li class="gallery-item-comments"><span class="visually-hidden">Comments:</span><i class="fa fa-comment" aria-hidden="true"></i> 2</li>
                 </ul>
 
             </div>
